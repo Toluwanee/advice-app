@@ -1,0 +1,103 @@
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .wrapper {
+    background: hsl(217, 19%, 24%);
+    width: 540px;
+    height: 332px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .card {
+    width: 444px;
+    height: 213px;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  
+    margin-top: 47px;
+  
+    text-align: center;
+  }
+  
+  .id p {
+    font-size: 14px;
+    color: hsl(150, 100%, 66%);
+    letter-spacing: 3px;
+  }
+  
+  .quote p {
+    font-size: 28px;
+    color: hsl(193, 38%, 86%);
+  }
+  
+  .dice {
+    height: 64px;
+    width: 64px;
+    background: hsl(150, 100%, 66%);
+    border-radius: 32px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    position: relative;
+    top: 35px;
+  
+    cursor: pointer;
+  }
+  
+  .dice:hover {
+    box-shadow: 0px 0px 40px hsla(150, 100%, 66%, 0.5);
+  }
+  
+  .dice img {
+    animation: rotate 5s ease-in-out infinite alternate;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media only screen and (max-width: 393px) {
+    .wrapper {
+      height: 347px;
+      width: 342px;
+    }
+  
+    .card {
+      width: 302.652px;
+      height: 209.515px;
+    }
+  
+    .id p {
+      font-size: 12px;
+      letter-spacing: 3px;
+    }
+  
+    .quote p {
+      font-size: 24px;
+      letter-spacing: -0.24px;
+    }
+  
+    .dice {
+      top: 45px;
+    }
+  }
+  
